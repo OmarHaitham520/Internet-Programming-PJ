@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+.parent {
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+grid-template-rows: repeat(7, 1fr);
+grid-column-gap: 50px;
+grid-row-gap: 0px;
+ height: 100vh;
+
+ 
+}
+.div1 { grid-area: 1 / 1 / 8 / 8; 
+background-color: cyan;}
+.div2 { grid-area: 1 / 1 / 2 / 8;
+background-color: yellow; }
+.div3 { grid-area: 1 / 1 / 2 / 2;
+background-color: blue;
+display: flex;
+justify-content: center }
+.div4 { grid-area: 1 / 3 / 2 / 4; 
+background-color: blue;
+display: flex;
+justify-content: center}
+.div5 { grid-area: 1 / 4 / 2 / 5;
+background-color: blue;
+display: flex;
+justify-content: center }
+.div6 { grid-area: 1 / 5 / 2 / 6; 
+background-color: blue;
+display: flex;
+justify-content: center}
+.div7 { grid-area: 1 / 7 / 2 / 8; 
+background-color: blue;
+display: flex;
+justify-content: center}
+
+
+
+.div8 { grid-area: 2 / 2 / 7 / 7;
+    font-family: 'Open Sans',sans-serif;
+background-color: purple;
+display: flex;
+align-items:center;
+justify-content:center;
+}
+
+.contrainer{
+background-color: white;
+border-radius: 5px;
+width:30vw;
+
+
+overflow: hidden;
+
+}
+
+
+
+
+.header {
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #f7f7f7;
+	padding: 20px 40px;
+}
+.form{
+    padding: 15px 25px;
+        }
+    
+.form-controll{
+    margin-bottom: 10px;
+    padding-bottom:10px;
+    position: relative;
+    }
+
+.form-controll label{
+display: inline-block;
+margin-bottom: 10px;
+}
+.form-controll input{
+border:2px solid #f0f0f0;
+border-radius: 4px;
+font-size: 15px;
+display: block;
+padding:10px;
+width: 95%;
+}
+.form-controll input:focus {
+	outline: 0;
+	border-color: #777;
+}
+.form-controll.sah input {
+    border-color:green;
+}
+.form-controll.ghalat input { 
+    border-color:red;
+}
+.form-controll i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-controll.sah i.fa-check-circle {
+	color: green;
+	visibility: visible;
+}
+
+.form-controll.ghalat i.fa-exclamation-circle {
+	color: red;
+	visibility: visible;
+}
+
+.form-controll small {
+	color:red;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-controll.error small {
+	visibility: visible;
+}
+.form button{
+    background-color:purple;
+    border:2px;
+    border-radius: 10px;
+    color:white;
+    font-weight: bolder;
+    font-size: 20px;
+    width: 100%;
+    padding:6px;
+    padding:12px;
+    display:block;
+}
+
+
+.div9 { grid-area: 7 / 1 / 8 / 8; 
+background-color: yellow
+}
